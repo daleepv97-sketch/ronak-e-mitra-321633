@@ -1,0 +1,417 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Free Online Tools | RONAK E MITRA</title>
+  <meta name="description" content="PDF, फोटो, टेक्स्ट, कैलकुलेशन और रोजमर्रा के कामों के लिए उपयोगी ऑनलाइन टूल्स की जानकारी और लिंक।">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #087443;
+      --dark: #064b2e;
+      --gold: #d6ad35;
+      --light: #f3fbf5;
+      --text: #26352c;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    header h1 {
+      font-size: 27px;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px #00000010;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 4px 8px;
+    }
+
+    .container {
+      width: min(100% - 28px, 1050px);
+      margin: 24px auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #087443, #15985a);
+      color: white;
+      padding: 30px 22px;
+      border-radius: 18px;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .search-box {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      margin-top: 18px;
+      border: 2px solid #d5e7da;
+      border-radius: 10px;
+      font-size: 16px;
+      outline-color: var(--gold);
+      background: white;
+    }
+
+    .notice {
+      background: #fff4d5;
+      border-left: 5px solid var(--gold);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    section, .tool-card {
+      background: white;
+      padding: 22px;
+      border-radius: 13px;
+      margin: 18px 0;
+      box-shadow: 0 3px 12px #00000009;
+    }
+
+    section h2 {
+      color: var(--dark);
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      color: var(--dark);
+      font-size: 18px;
+      margin: 10px 0 6px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .tool-card {
+      margin: 0;
+      border-top: 4px solid var(--green);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tool-card h3 {
+      margin-top: 0;
+    }
+
+    .tool-card p {
+      flex-grow: 1;
+    }
+
+    .tool-link {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 9px 14px;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .tip {
+      background: #e7f5ea;
+      border-radius: 9px;
+      padding: 14px;
+      margin-top: 12px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 24px 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffdf76;
+      text-decoration: none;
+      margin: 5px 8px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      header h1, .hero h2 {
+        font-size: 23px;
+      }
+
+      section, .tool-card {
+        padding: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>RONAK E MITRA</h1>
+  <p>Useful Online Tools — आसान हिंदी में</p>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="aadhaar.html">Aadhaar</a>
+  <a href="jan-aadhaar.html">Jan Aadhaar</a>
+  <a href="voter.html">Voter ID</a>
+  <a href="farmer.html">Farmer ID</a>
+  <a href="schemes.html">योजनाएँ</a>
+</nav>
+
+<main class="container">
+
+  <div class="hero">
+    <h2>🧰 उपयोगी ऑनलाइन टूल्स</h2>
+    <p>
+      PDF पढ़ने, फाइलें व्यवस्थित करने, फोटो तैयार करने, टेक्स्ट लिखने
+      और रोजमर्रा के डिजिटल कामों के लिए उपयोगी वेबसाइटों के लिंक खोजें।
+    </p>
+    <input
+      type="search"
+      id="toolSearch"
+      class="search-box"
+      placeholder="🔎 टूल खोजें — जैसे PDF, फोटो, कैलकुलेटर..."
+      aria-label="ऑनलाइन टूल खोजें"
+    >
+    <p id="resultCount" aria-live="polite">सभी टूल्स दिखाए जा रहे हैं।</p>
+  </div>
+
+  <div class="notice">
+    <strong>ध्यान दें:</strong> RONAK E MITRA एक निजी जानकारी वेबसाइट है,
+    सरकारी वेबसाइट नहीं। नीचे दिए गए कई टूल्स बाहरी वेबसाइटों के हैं।
+    उनके नियम, कीमत और गोपनीयता नीतियाँ अलग हो सकती हैं।
+    आधार, बैंक या अन्य संवेदनशील दस्तावेज अनजान वेबसाइट पर अपलोड न करें।
+  </div>
+
+  <section>
+    <h2>📄 PDF और डॉक्यूमेंट टूल्स</h2>
+    <p>PDF पढ़ने, दस्तावेज तैयार करने या फाइल का आकार घटाने के लिए विकल्प देखें।</p>
+
+    <div class="cards">
+      <article class="tool-card searchable" data-keywords="pdf merge join combine जोड़ना">
+        <h3>📚 PDF जोड़ना</h3>
+        <p>कई PDF फाइलों को एक दस्तावेज में जोड़ने के लिए ऑनलाइन टूल। संवेदनशील फाइलें अपलोड करने से बचें।</p>
+        <a class="tool-link" href="https://www.ilovepdf.com/merge_pdf" target="_blank" rel="noopener noreferrer">टूल खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="pdf split अलग करना pages">
+        <h3>✂️ PDF अलग करना</h3>
+        <p>PDF के चुने हुए पेज अलग फाइलों में निकालने के लिए उपयोगी।</p>
+        <a class="tool-link" href="https://www.ilovepdf.com/split_pdf" target="_blank" rel="noopener noreferrer">टूल खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="compress pdf size छोटा">
+        <h3>🗜️ PDF का आकार घटाएँ</h3>
+        <p>बड़ी PDF फाइल को छोटा करने का प्रयास करें ताकि उसे साझा करना आसान हो।</p>
+        <a class="tool-link" href="https://www.ilovepdf.com/compress_pdf" target="_blank" rel="noopener noreferrer">टूल खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="pdf to word convert doc">
+        <h3>📝 PDF से Word</h3>
+        <p>PDF को संपादन योग्य Word दस्तावेज में बदलने का विकल्प। परिणाम को जाँच लें।</p>
+        <a class="tool-link" href="https://www.ilovepdf.com/pdf_to_word" target="_blank" rel="noopener noreferrer">टूल खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="word to pdf convert document">
+        <h3>📃 Word से PDF</h3>
+        <p>Word दस्तावेज को PDF प्रारूप में बदलने के लिए ऑनलाइन सेवा।</p>
+        <a class="tool-link" href="https://www.ilovepdf.com/word_to_pdf" target="_blank" rel="noopener noreferrer">टूल खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="google docs document typing लिखना">
+        <h3>✍️ Google Docs</h3>
+        <p>ऑनलाइन दस्तावेज लिखें और संपादित करें। उपलब्ध सुविधाओं के लिए Google खाते की जरूरत हो सकती है।</p>
+        <a class="tool-link" href="https://docs.google.com/" target="_blank" rel="noopener noreferrer">Docs खोलें ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>🖼️ फोटो और डिजाइन टूल्स</h2>
+
+    <div class="cards">
+      <article class="tool-card searchable" data-keywords="photo edit image editor फोटो संपादन">
+        <h3>🎨 Photopea</h3>
+        <p>ब्राउज़र में फोटो और ग्राफिक्स संपादित करने का टूल।</p>
+        <a class="tool-link" href="https://www.photopea.com/" target="_blank" rel="noopener noreferrer">Photopea खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="canva design poster thumbnail banner">
+        <h3>🪄 Canva</h3>
+        <p>पोस्टर, बैनर, सोशल मीडिया पोस्ट और थंबनेल डिजाइन करने के लिए।</p>
+        <a class="tool-link" href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="remove background background remover फोटो">
+        <h3>🧍 Background Remover</h3>
+        <p>फोटो की पृष्ठभूमि हटाने के लिए उपलब्ध ऑनलाइन सेवा देखें।</p>
+        <a class="tool-link" href="https://www.remove.bg/" target="_blank" rel="noopener noreferrer">वेबसाइट खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="compress image jpg png photo size">
+        <h3>📉 Image Compressor</h3>
+        <p>फोटो का आकार घटाकर उसे वेबसाइट या फॉर्म के लिए तैयार करने में मदद लें।</p>
+        <a class="tool-link" href="https://tinypng.com/" target="_blank" rel="noopener noreferrer">TinyPNG खोलें ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>🧮 कैलकुलेटर और उपयोगी टूल्स</h2>
+
+    <div class="cards">
+      <article class="tool-card searchable" data-keywords="calculator गणना जोड़ घटाना">
+        <h3>🧮 Calculator</h3>
+        <p>रोजमर्रा की गणना के लिए अपने डिवाइस के कैलकुलेटर का उपयोग करें।</p>
+        <a class="tool-link" href="https://www.google.com/search?q=calculator" target="_blank" rel="noopener noreferrer">कैलकुलेटर खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="translate translation हिंदी english भाषा">
+        <h3>🌐 Google Translate</h3>
+        <p>हिंदी, अंग्रेजी और अन्य भाषाओं के बीच टेक्स्ट का अनुवाद करें। परिणाम को जाँच लें।</p>
+        <a class="tool-link" href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Translate खोलें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="typing hindi english keyboard">
+        <h3>⌨️ Google Input Tools</h3>
+        <p>हिंदी और दूसरी भाषाओं में टाइप करने के उपलब्ध विकल्प देखें।</p>
+        <a class="tool-link" href="https://www.google.com/inputtools/" target="_blank" rel="noopener noreferrer">Typing विकल्प देखें ↗</a>
+      </article>
+
+      <article class="tool-card searchable" data-keywords="speed test internet wifi">
+        <h3>📶 Internet Speed Test</h3>
+        <p>अपने इंटरनेट कनेक्शन की डाउनलोड और अपलोड गति जाँचें।</p>
+        <a class="tool-link" href="https://fast.com/" target="_blank" rel="noopener noreferrer">स्पीड जाँचें ↗</a>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔐 सुरक्षित तरीके से टूल इस्तेमाल करें</h2>
+    <div class="tip">
+      <strong>गोपनीयता का ध्यान रखें:</strong>
+      आधार कार्ड, बैंक स्टेटमेंट, पासपोर्ट, OTP, पासवर्ड या निजी दस्तावेज
+      किसी अनजान वेबसाइट पर अपलोड न करें।
+    </div>
+    <ul>
+      <li>बाहरी वेबसाइट खोलने से पहले उसका डोमेन नाम जाँचें।</li>
+      <li>अपलोड करने से पहले देखें कि फाइल में निजी जानकारी तो नहीं है।</li>
+      <li>किसी टूल पर भुगतान करने से पहले उसकी कीमत और शर्तें पढ़ें।</li>
+      <li>डाउनलोड की गई फाइल को खोलने से पहले उसकी सुरक्षा जाँचें।</li>
+      <li>सरकारी फॉर्म के लिए आधिकारिक विभाग की वेबसाइट को प्राथमिकता दें।</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>❓ अक्सर पूछे जाने वाले सवाल</h2>
+
+    <h3>क्या सभी टूल्स मुफ्त हैं?</h3>
+    <p>जरूरी नहीं। कुछ सेवाएँ मुफ्त सुविधाएँ देती हैं और कुछ में भुगतान या उपयोग की सीमाएँ हो सकती हैं।</p>
+
+    <h3>क्या ये टूल्स RONAK E MITRA ने बनाए हैं?</h3>
+    <p>नहीं। इस पेज पर कई बाहरी सेवाओं के लिंक दिए गए हैं। वे अलग-अलग कंपनियों या संस्थाओं द्वारा संचालित होती हैं।</p>
+
+    <h3>क्या मैं सरकारी दस्तावेज इन टूल्स पर अपलोड कर सकता हूँ?</h3>
+    <p>संवेदनशील दस्तावेज अपलोड करने से बचें। सरकारी काम के लिए संबंधित आधिकारिक पोर्टल का उपयोग करें।</p>
+
+    <h3>सर्च बॉक्स कैसे काम करता है?</h3>
+    <p>ऊपर दिए गए सर्च बॉक्स में PDF, फोटो या किसी टूल का नाम लिखें। यह इसी पेज पर मौजूद टूल कार्ड फ़िल्टर करेगा।</p>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>RONAK E MITRA</strong></p>
+  <p>उपयोगी जानकारी, आसान हिंदी में।</p>
+  <p>यह एक स्वतंत्र निजी वेबसाइट है, सरकारी वेबसाइट नहीं।</p>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <p>© <span id="year"></span> RONAK E MITRA</p>
+</footer>
+
+<script>
+  const searchInput = document.getElementById("toolSearch");
+  const cards = document.querySelectorAll(".searchable");
+  const resultCount = document.getElementById("resultCount");
+
+  searchInput.addEventListener("input", function () {
+    const query = this.value.trim().toLowerCase();
+    let visible = 0;
+
+    cards.forEach(function (card) {
+      const text = (
+        card.innerText + " " +
+        (card.dataset.keywords || "")
+      ).toLowerCase();
+
+      const match = text.includes(query);
+      card.classList.toggle("hidden", !match);
+
+      if (match) visible++;
+    });
+
+    resultCount.textContent = query
+      ? visible + " टूल मिले।"
+      : "सभी टूल्स दिखाए जा रहे हैं।";
+  });
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```

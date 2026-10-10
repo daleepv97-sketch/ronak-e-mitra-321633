@@ -1,0 +1,473 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Farmer ID और किसान योजनाएँ | RONAK E MITRA</title>
+  <meta name="description" content="Farmer ID, किसान पंजीकरण, जरूरी दस्तावेज, राजस्थान की किसान सेवाएँ और सरकारी योजनाओं की जानकारी आसान हिंदी में।">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --green: #087443;
+      --dark: #064b2e;
+      --gold: #d6ad35;
+      --light: #f3fbf5;
+      --text: #26352c;
+      --white: #ffffff;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 22px 15px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    header h1 {
+      font-size: 27px;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px #00000010;
+    }
+
+    nav a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin: 4px 8px;
+    }
+
+    .container {
+      width: min(100% - 28px, 1000px);
+      margin: 24px auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #087443, #15985a);
+      color: white;
+      padding: 30px 22px;
+      border-radius: 18px;
+      border-bottom: 5px solid var(--gold);
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 27px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #18261c;
+      text-decoration: none;
+      padding: 10px 16px;
+      margin: 8px 8px 0 0;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .notice {
+      background: #fff4d5;
+      border-left: 5px solid var(--gold);
+      padding: 15px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    section, .card {
+      background: white;
+      padding: 22px;
+      border-radius: 13px;
+      margin: 18px 0;
+      box-shadow: 0 3px 12px #00000009;
+    }
+
+    h2, h3 {
+      color: var(--dark);
+      line-height: 1.5;
+    }
+
+    section h2 {
+      margin-bottom: 12px;
+      font-size: 23px;
+    }
+
+    h3 {
+      margin: 12px 0 6px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul, ol {
+      padding-left: 24px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .card {
+      margin: 0;
+      border-top: 4px solid var(--green);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    a.text-link, section a {
+      color: var(--green);
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .faq {
+      padding: 12px 0;
+      border-bottom: 1px solid #e2e9e3;
+    }
+
+    .faq:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 24px 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffdf76;
+      text-decoration: none;
+      margin: 5px 8px;
+      display: inline-block;
+    }
+
+    @media (max-width: 600px) {
+      header h1, .hero h2 {
+        font-size: 23px;
+      }
+
+      section, .card {
+        padding: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>RONAK E MITRA</h1>
+  <p>Farmer ID और किसान सेवाओं की जानकारी</p>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="aadhaar.html">Aadhaar</a>
+  <a href="jan-aadhaar.html">Jan Aadhaar</a>
+  <a href="voter.html">Voter ID</a>
+  <a href="schemes.html">किसान योजनाएँ</a>
+</nav>
+
+<main class="container">
+
+  <div class="hero">
+    <h2>🌾 Farmer ID की पूरी जानकारी</h2>
+    <p>
+      किसान पहचान, पंजीकरण की सामान्य प्रक्रिया, संभावित दस्तावेज,
+      राजस्थान की किसान सेवाओं और योजनाओं के बारे में जानें।
+    </p>
+    <a class="btn" href="https://agristack.gov.in/" target="_blank" rel="noopener noreferrer">
+      AgriStack पोर्टल देखें ↗
+    </a>
+    <a class="btn" href="#process">प्रक्रिया जानें</a>
+  </div>
+
+  <div class="notice">
+    <strong>जरूरी सूचना:</strong>
+    RONAK E MITRA एक स्वतंत्र निजी जानकारी वेबसाइट है, सरकारी वेबसाइट नहीं।
+    Farmer ID की उपलब्धता, पात्रता और आवेदन की प्रक्रिया राज्य और संबंधित
+    सरकारी निर्देशों के अनुसार बदल सकती है।
+  </div>
+
+  <section>
+    <h2>1. Farmer ID क्या है?</h2>
+    <p>
+      Farmer ID या किसान पहचान का उद्देश्य किसान से संबंधित रिकॉर्ड और
+      कृषि सेवाओं को व्यवस्थित करने में मदद करना है। भारत में AgriStack
+      जैसी पहलों के अंतर्गत किसानों का डिजिटल रिकॉर्ड तैयार करने का काम
+      किया जा रहा है।
+    </p>
+    <p>
+      किसान पहचान का इस्तेमाल संबंधित कार्यक्रमों में किसान के रिकॉर्ड को
+      पहचानने और कुछ कृषि सेवाओं तक पहुँच आसान बनाने के लिए हो सकता है।
+      हर सेवा में एक जैसी शर्तें लागू हों, यह जरूरी नहीं है।
+    </p>
+    <p>
+      Farmer ID, जमाबंदी, भूमि रिकॉर्ड, आधार और किसी योजना का लाभ अलग-अलग
+      चीजें हैं। Farmer ID बन जाने से हर सरकारी योजना का लाभ अपने आप
+      मिलने की गारंटी नहीं होती।
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Farmer ID के लिए कहाँ जानकारी लें?</h2>
+    <div class="cards">
+
+      <div class="card">
+        <h3>🌐 AgriStack</h3>
+        <p>किसान रजिस्ट्री और डिजिटल कृषि पहचान से जुड़ी आधिकारिक जानकारी देखें।</p>
+        <a class="text-link" href="https://agristack.gov.in/" target="_blank" rel="noopener noreferrer">
+          AgriStack खोलें ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🏛️ राजस्थान कृषि विभाग</h3>
+        <p>राज्य की कृषि सेवाओं और विभागीय जानकारी के लिए आधिकारिक वेबसाइट देखें।</p>
+        <a class="text-link" href="https://agriculture.rajasthan.gov.in/" target="_blank" rel="noopener noreferrer">
+          कृषि विभाग खोलें ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🌱 PM-KISAN</h3>
+        <p>प्रधानमंत्री किसान सम्मान निधि योजना की पात्रता और स्थिति की जानकारी लें।</p>
+        <a class="text-link" href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">
+          PM-KISAN खोलें ↗
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>🗂️ राजस्थान SSO</h3>
+        <p>राजस्थान सरकार की उपलब्ध ऑनलाइन सेवाओं और लॉगिन विकल्पों को देखें।</p>
+        <a class="text-link" href="https://sso.rajasthan.gov.in/" target="_blank" rel="noopener noreferrer">
+          Rajasthan SSO खोलें ↗
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="process">
+    <h2>3. Farmer ID बनवाने की सामान्य प्रक्रिया</h2>
+    <ol>
+      <li>सबसे पहले अपने राज्य में किसान रजिस्ट्री की वर्तमान व्यवस्था की पुष्टि करें।</li>
+      <li>AgriStack या राज्य कृषि विभाग द्वारा बताए गए आधिकारिक माध्यम को खोलें।</li>
+      <li>देखें कि पंजीकरण ऑनलाइन, अधिकृत केंद्र या किसी अन्य निर्धारित माध्यम से होता है।</li>
+      <li>पात्रता और जरूरी दस्तावेजों की आधिकारिक सूची पढ़ें।</li>
+      <li>आवेदन में माँगी गई जानकारी सही-सही भरें।</li>
+      <li>यदि भूमि या किसान रिकॉर्ड के सत्यापन की जरूरत हो, तो संबंधित निर्देशों का पालन करें।</li>
+      <li>आवेदन जमा करने के बाद मिलने वाली रसीद या संदर्भ संख्या सुरक्षित रखें।</li>
+      <li>पंजीकरण की स्थिति आधिकारिक माध्यम से जाँचें।</li>
+    </ol>
+    <p>
+      यह सामान्य मार्गदर्शन है। आपके जिले में लागू प्रक्रिया और पंजीकरण
+      सुविधा की पुष्टि संबंधित कृषि विभाग या अधिकृत सहायता केंद्र से करें।
+    </p>
+  </section>
+
+  <section>
+    <h2>4. कौन-कौन से दस्तावेज काम आ सकते हैं?</h2>
+    <p>
+      आवश्यक दस्तावेज किसान की स्थिति और संबंधित सरकारी प्रक्रिया पर निर्भर
+      करते हैं। कुछ मामलों में निम्न जानकारी माँगी जा सकती है:
+    </p>
+    <ul>
+      <li>आधार कार्ड या निर्धारित पहचान संबंधी विवरण।</li>
+      <li>आधार से जुड़ा मोबाइल नंबर, यदि OTP सत्यापन आवश्यक हो।</li>
+      <li>जमाबंदी या भूमि रिकॉर्ड, जहाँ लागू हो।</li>
+      <li>किसान और भूमि से संबंधित अन्य रिकॉर्ड।</li>
+      <li>बैंक विवरण, यदि संबंधित सेवा या योजना के लिए जरूरी हों।</li>
+    </ul>
+    <p>
+      यह हर किसान के लिए अनिवार्य दस्तावेजों की अंतिम सूची नहीं है।
+      केवल आधिकारिक निर्देशों में माँगे गए दस्तावेज ही तैयार करें।
+    </p>
+  </section>
+
+  <section>
+    <h2>5. अगर भूमि रिकॉर्ड में गलती हो तो?</h2>
+    <p>
+      Farmer ID पंजीकरण में भूमि संबंधी जानकारी का मिलान आवश्यक हो सकता है।
+      यदि नाम, भूमि विवरण या रिकॉर्ड में कोई गलती दिखाई देती है, तो पहले
+      संबंधित राजस्व विभाग या अधिकृत कार्यालय से रिकॉर्ड सुधार की प्रक्रिया
+      पूछें।
+    </p>
+    <p>
+      गलत जानकारी भरकर आवेदन जमा न करें। रिकॉर्ड में सुधार होने के बाद
+      निर्धारित प्रक्रिया के अनुसार पंजीकरण या सत्यापन दोबारा करें।
+    </p>
+  </section>
+
+  <section>
+    <h2>6. किसान के लिए उपयोगी सरकारी योजनाएँ</h2>
+
+    <h3>प्रधानमंत्री किसान सम्मान निधि (PM-KISAN)</h3>
+    <p>
+      पात्र किसानों को योजना के नियमों के अनुसार वित्तीय सहायता प्रदान
+      करने वाली केंद्र सरकार की योजना है। पात्रता, e-KYC और भुगतान की
+      स्थिति आधिकारिक वेबसाइट पर जाँचें।
+    </p>
+    <a href="https://pmkisan.gov.in/" target="_blank" rel="noopener noreferrer">
+      PM-KISAN आधिकारिक वेबसाइट ↗
+    </a>
+
+    <h3>फसल बीमा योजना</h3>
+    <p>
+      प्रधानमंत्री फसल बीमा योजना के अंतर्गत उपलब्ध सुविधाओं, अधिसूचित
+      फसलों, आवेदन अवधि और पात्रता की जानकारी आधिकारिक पोर्टल पर देखें।
+    </p>
+    <a href="https://pmfby.gov.in/" target="_blank" rel="noopener noreferrer">
+      PMFBY आधिकारिक वेबसाइट ↗
+    </a>
+
+    <h3>राजस्थान की कृषि सेवाएँ</h3>
+    <p>
+      राज्य में उपलब्ध कृषि योजनाओं, अनुदान, पंजीकरण और विभागीय सूचनाओं
+      के लिए राजस्थान कृषि विभाग की आधिकारिक वेबसाइट देखें।
+    </p>
+    <a href="https://agriculture.rajasthan.gov.in/" target="_blank" rel="noopener noreferrer">
+      राजस्थान कृषि विभाग ↗
+    </a>
+
+    <p>
+      योजनाओं की राशि, तारीख, पात्रता और आवेदन की शर्तें बदल सकती हैं।
+      आवेदन करने से पहले वर्तमान आधिकारिक दिशानिर्देश जरूर पढ़ें।
+    </p>
+  </section>
+
+  <section>
+    <h2>7. ऑनलाइन धोखाधड़ी से कैसे बचें?</h2>
+    <ul>
+      <li>Farmer ID बनवाने के नाम पर अनजान व्यक्ति को OTP न बताएँ।</li>
+      <li>आधार, बैंक विवरण और दस्तावेज सोशल मीडिया पर साझा न करें।</li>
+      <li>केवल आधिकारिक या सत्यापित सरकारी पोर्टल का उपयोग करें।</li>
+      <li>किसी व्यक्ति के “पक्का सरकारी लाभ” दिलाने के दावे पर भरोसा न करें।</li>
+      <li>किसी केंद्र पर सेवा शुल्क लगे तो पहले लागू शुल्क और रसीद की जानकारी लें।</li>
+      <li>अपना पासवर्ड किसी दूसरे व्यक्ति के साथ साझा न करें।</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. अक्सर पूछे जाने वाले सवाल</h2>
+
+    <div class="faq">
+      <h3>प्रश्न: क्या Farmer ID हर किसान के लिए जरूरी है?</h3>
+      <p>यह संबंधित राज्य, योजना और सेवा के नियमों पर निर्भर करता है। अपने मामले में लागू वर्तमान निर्देश जाँचें।</p>
+    </div>
+
+    <div class="faq">
+      <h3>प्रश्न: क्या Farmer ID से हर योजना का लाभ मिल जाता है?</h3>
+      <p>नहीं। हर योजना की अपनी पात्रता और आवेदन प्रक्रिया होती है।</p>
+    </div>
+
+    <div class="faq">
+      <h3>प्रश्न: क्या राजस्थान में ऑनलाइन पंजीकरण किया जा सकता है?</h3>
+      <p>उपलब्ध सुविधा और पंजीकरण का तरीका वर्तमान सरकारी निर्देशों के अनुसार जाँचें। आधिकारिक कृषि विभाग या AgriStack से पुष्टि करें।</p>
+    </div>
+
+    <div class="faq">
+      <h3>प्रश्न: भूमि मेरे नाम पर नहीं है, तो क्या करूँ?</h3>
+      <p>पात्रता और भूमि रिकॉर्ड से संबंधित नियम अपने मामले के अनुसार संबंधित कृषि या राजस्व कार्यालय से पूछें। गलत जानकारी देकर आवेदन न करें।</p>
+    </div>
+
+    <div class="faq">
+      <h3>प्रश्न: आवेदन की स्थिति कैसे पता करें?</h3>
+      <p>पंजीकरण के दौरान मिले संदर्भ नंबर या उपलब्ध आधिकारिक स्थिति-जाँच सुविधा का उपयोग करें।</p>
+    </div>
+
+    <div class="faq">
+      <h3>प्रश्न: क्या RONAK E MITRA सरकारी पोर्टल है?</h3>
+      <p>नहीं। यह एक स्वतंत्र निजी जानकारी वेबसाइट है। वास्तविक आवेदन आधिकारिक माध्यम से ही करें।</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>9. दूसरी उपयोगी सेवाएँ</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🪪 Aadhaar Card</h3>
+        <p>आधार सेवाओं की जानकारी।</p>
+        <a href="aadhaar.html">यहाँ पढ़ें →</a>
+      </div>
+
+      <div class="card">
+        <h3>👨‍👩‍👧 Jan Aadhaar</h3>
+        <p>राजस्थान जन आधार से जुड़ी जानकारी।</p>
+        <a href="jan-aadhaar.html">यहाँ पढ़ें →</a>
+      </div>
+
+      <div class="card">
+        <h3>🗳️ Voter ID</h3>
+        <p>मतदाता पंजीकरण और कार्ड की जानकारी।</p>
+        <a href="voter.html">यहाँ पढ़ें →</a>
+      </div>
+
+      <div class="card">
+        <h3>📚 सरकारी योजनाएँ</h3>
+        <p>विभिन्न सरकारी योजनाओं के बारे में पढ़ें।</p>
+        <a href="schemes.html">यहाँ पढ़ें →</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>RONAK E MITRA</strong></p>
+  <p>उपयोगी जानकारी, आसान हिंदी में।</p>
+  <p>यह एक स्वतंत्र निजी वेबसाइट है, सरकारी वेबसाइट नहीं।</p>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
+  <p>© <span id="year"></span> RONAK E MITRA</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```

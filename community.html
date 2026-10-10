@@ -1,0 +1,671 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Community Hub | RONAK E MITRA</title>
+<meta name="description" content="RONAK E MITRA Community से जुड़ें। WhatsApp community, useful digital tools, AI resources, career information और online safety resources खोजें.">
+
+<style>
+:root {
+  --green: #075c3b;
+  --green2: #0b8b58;
+  --gold: #f5c65d;
+  --bg: #07140f;
+  --card: #10251b;
+  --white: #f7fff9;
+  --muted: #b7c9be;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Noto Sans Devanagari", sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: rgba(5, 28, 19, .97);
+  border-bottom: 1px solid #d9ad4555;
+  padding: 18px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  color: var(--gold);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: .5px;
+}
+
+.brand span {
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #e3eee7;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: var(--gold);
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 76px 20px 65px;
+  background:
+    radial-gradient(ellipse at 50% 0%, #14764c66, transparent 65%),
+    linear-gradient(140deg, #07140f, #103d29 55%, #07140f);
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  inset: 12px;
+  border: 1px solid #f5c65d22;
+  border-radius: 22px;
+  pointer-events: none;
+}
+
+.pill {
+  display: inline-block;
+  padding: 7px 15px;
+  border: 1px solid #f5c65d66;
+  background: #f5c65d12;
+  color: var(--gold);
+  border-radius: 30px;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 6vw, 62px);
+  line-height: 1.15;
+  max-width: 850px;
+  margin: 0 auto 18px;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  max-width: 650px;
+  color: #d0e2d6;
+  margin: 0 auto 28px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 21px;
+  border-radius: 11px;
+  font-weight: 800;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #ffe49b, #e6ae34);
+  color: #183421;
+  box-shadow: 0 8px 25px #d8a72b20;
+}
+
+.btn-outline {
+  border: 1px solid #d4e5d8;
+  color: white;
+  background: #ffffff08;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  max-width: 700px;
+  margin: 42px auto 0;
+}
+
+.stat {
+  border: 1px solid #ffffff16;
+  border-radius: 13px;
+  background: #ffffff07;
+  padding: 14px 8px;
+}
+
+.stat strong {
+  display: block;
+  color: var(--gold);
+  font-size: 17px;
+}
+
+.stat small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 48px 20px;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 27px;
+}
+
+.section-head small {
+  color: var(--gold);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-head h2 {
+  font-size: clamp(25px, 4vw, 36px);
+  margin: 7px 0;
+}
+
+.section-head p {
+  color: var(--muted);
+  max-width: 650px;
+  margin: auto;
+}
+
+.whatsapp {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 25px;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid #43c98255;
+  border-radius: 22px;
+  background:
+    radial-gradient(ellipse at 100% 0%, #1ca76522, transparent 60%),
+    linear-gradient(135deg, #102a1d, #0b1c13);
+  box-shadow: 0 20px 50px #00000020;
+}
+
+.whatsapp h2 {
+  font-size: clamp(26px, 4vw, 37px);
+  line-height: 1.3;
+  margin: 10px 0 13px;
+}
+
+.whatsapp h2 span {
+  color: #65e49d;
+}
+
+.whatsapp p {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.wa-icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 35px;
+  display: grid;
+  place-items: center;
+  font-size: 66px;
+  background: linear-gradient(145deg, #24d477, #087b46);
+  box-shadow: 0 15px 40px #17b86635;
+  margin: auto;
+}
+
+.wa-label {
+  display: inline-block;
+  background: #22c76c18;
+  color: #7df0ac;
+  border: 1px solid #27cf7355;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.card {
+  background: linear-gradient(145deg, #142a1e, #0d1d14);
+  border: 1px solid #ffffff13;
+  border-radius: 17px;
+  padding: 23px;
+  transition: .25s;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #f5c65d77;
+  box-shadow: 0 12px 30px #00000025;
+}
+
+.icon {
+  width: 49px;
+  height: 49px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #f5c65d14;
+  border: 1px solid #f5c65d30;
+  font-size: 25px;
+  margin-bottom: 17px;
+}
+
+.card h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  flex-grow: 1;
+  margin-bottom: 18px;
+}
+
+.card a {
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.card a:hover {
+  color: white;
+}
+
+.feature {
+  background: #0d2117;
+  border: 1px solid #ffffff13;
+  border-radius: 20px;
+  padding: 28px;
+}
+
+.feature ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.feature li {
+  color: #d4e4d9;
+  background: #ffffff06;
+  border: 1px solid #ffffff0e;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.feature li::first-letter {
+  color: var(--gold);
+}
+
+.cta {
+  text-align: center;
+  padding: 42px 22px;
+  background: linear-gradient(120deg, #104b31, #10251a);
+  border: 1px solid #f5c65d44;
+  border-radius: 20px;
+}
+
+.cta h2 {
+  font-size: clamp(25px, 4vw, 35px);
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: #c6d9cd;
+  margin: 0 auto 22px;
+  max-width: 650px;
+}
+
+footer {
+  background: #040d08;
+  border-top: 1px solid #f5c65d33;
+  padding: 28px 20px;
+  text-align: center;
+}
+
+footer strong {
+  color: var(--gold);
+}
+
+footer p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 17px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.footer-links a {
+  color: #dcebe0;
+  font-size: 13px;
+}
+
+.footer-links a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .whatsapp {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .wa-icon {
+    grid-row: 1;
+    width: 95px;
+    height: 95px;
+    font-size: 49px;
+    border-radius: 25px;
+  }
+}
+
+@media (max-width: 520px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 55px 18px;
+  }
+
+  .stats {
+    gap: 7px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 190px;
+  }
+
+  .feature ul {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 35px 16px;
+  }
+
+  .whatsapp {
+    padding: 23px 17px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a class="brand" href="index.html">RONAK <span>E MITRA</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="tools.html">Digital Tools</a>
+    <a href="schemes.html">Schemes</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="pill">✦ YOUR DIGITAL COMMUNITY ✦</div>
+
+  <h1>Connect. Learn.<br><span>Grow Together.</span></h1>
+
+  <p>
+    Useful resources, digital learning और काम की जानकारी एक जगह।
+    हमारी community से जुड़ें और अपने डिजिटल सफर को बेहतर बनाएँ।
+  </p>
+
+  <div class="actions">
+    <a class="btn btn-gold"
+       href="https://chat.whatsapp.com/HHqCR6aF00m1LpUnXnkh9f?s=cl%26p=a%26mlu=4%26ilr=4%26iam=2"
+       target="_blank" rel="noopener noreferrer">
+       🟢 Join WhatsApp Group ↗
+    </a>
+
+    <a class="btn btn-outline" href="#resources">
+      Explore Resources ↓
+    </a>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <strong>Useful</strong>
+      <small>Digital Resources</small>
+    </div>
+    <div class="stat">
+      <strong>Learn</strong>
+      <small>New Skills</small>
+    </div>
+    <div class="stat">
+      <strong>Connect</strong>
+      <small>With Community</small>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="container">
+    <div class="whatsapp">
+      <div>
+        <span class="wa-label">🟢 COMMUNITY INVITATION</span>
+        <h2>Join Our <span>WhatsApp Community</span></h2>
+        <p>
+          हमारे WhatsApp group से जुड़ें। Community के सदस्यों के साथ
+          जुड़ने और group में उपलब्ध उपयोगी जानकारी देखने के लिए नीचे
+          दिए गए बटन पर क्लिक करें।
+        </p>
+        <a class="btn btn-gold"
+           href="https://chat.whatsapp.com/HHqCR6aF00m1LpUnXnkh9f?s=cl%26p=a%26mlu=4%26ilr=4%26iam=2"
+           target="_blank" rel="noopener noreferrer">
+          JOIN THIS GROUP →
+        </a>
+      </div>
+
+      <div class="wa-icon" aria-label="WhatsApp">✆</div>
+    </div>
+  </section>
+
+  <section class="container" id="resources">
+    <div class="section-head">
+      <small>EXPLORE & DISCOVER</small>
+      <h2>Useful Digital Resources</h2>
+      <p>
+        रोजमर्रा के ऑनलाइन काम, सीखने और डिजिटल जानकारी के लिए
+        चुने हुए उपयोगी resources।
+      </p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="icon">📄</div>
+        <h3>PDF & Document Tools</h3>
+        <p>PDF merge, compress, split और document management के उपयोगी tools खोजें। निजी दस्तावेज अपलोड करने से पहले tool की privacy जाँचें।</p>
+        <a href="tools.html">Explore Tools →</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🖼️</div>
+        <h3>Photo & Design</h3>
+        <p>Photo editing, graphics और design सीखने के लिए उपयोगी ऑनलाइन विकल्प।</p>
+        <a href="https://www.photopea.com/" target="_blank" rel="noopener noreferrer">Explore Photopea ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🤖</div>
+        <h3>AI Tools & Learning</h3>
+        <p>AI की मदद से लिखना, सीखना और नए ideas तैयार करना सीखें।</p>
+        <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">Explore AI ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🎓</div>
+        <h3>Study Resources</h3>
+        <p>पढ़ाई और skill development के लिए सरकारी learning resources देखें।</p>
+        <a href="https://swayam.gov.in/" target="_blank" rel="noopener noreferrer">Explore SWAYAM ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">💼</div>
+        <h3>Career & Jobs</h3>
+        <p>सरकारी नौकरी और रोजगार से जुड़ी जानकारी के लिए आधिकारिक पोर्टल देखें।</p>
+        <a href="https://www.ncs.gov.in/" target="_blank" rel="noopener noreferrer">Explore NCS ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🛡️</div>
+        <h3>Online Safety</h3>
+        <p>ऑनलाइन धोखाधड़ी, संदिग्ध लिंक और साइबर सुरक्षा के बारे में जानकारी पाएँ।</p>
+        <a href="https://www.cybercrime.gov.in/" target="_blank" rel="noopener noreferrer">Cyber Crime Portal ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🏛️</div>
+        <h3>Government Information</h3>
+        <p>भारत सरकार की योजनाओं और सार्वजनिक सेवाओं के लिए राष्ट्रीय पोर्टल।</p>
+        <a href="https://www.india.gov.in/" target="_blank" rel="noopener noreferrer">India.gov.in ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">📁</div>
+        <h3>Digital Documents</h3>
+        <p>डिजिटल दस्तावेजों और संबंधित सेवाओं की जानकारी के लिए आधिकारिक DigiLocker वेबसाइट देखें।</p>
+        <a href="https://www.digilocker.gov.in/" target="_blank" rel="noopener noreferrer">Open DigiLocker ↗</a>
+      </article>
+
+      <article class="card">
+        <div class="icon">🌐</div>
+        <h3>Our Website Services</h3>
+        <p>Aadhaar, Jan Aadhaar, Voter ID, Farmer ID और योजनाओं के information pages देखें।</p>
+        <a href="index.html">Explore RONAK E MITRA →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="feature">
+      <div class="section-head">
+        <small>SMART DIGITAL HABITS</small>
+        <h2>अपना Digital Experience बेहतर बनाएँ</h2>
+        <p>इन आसान बातों का ध्यान रखें और इंटरनेट का सुरक्षित उपयोग करें।</p>
+      </div>
+
+      <ul>
+        <li>✓ अनजान लिंक खोलने से पहले जाँचें।</li>
+        <li>✓ OTP और पासवर्ड किसी को न बताएँ।</li>
+        <li>✓ नौकरी या योजना के नाम पर माँगे गए पैसे जाँचकर ही दें।</li>
+        <li>✓ सरकारी जानकारी official portal से verify करें।</li>
+        <li>✓ Online PDF tools पर निजी दस्तावेज सोच-समझकर अपलोड करें।</li>
+        <li>✓ Community में दूसरों के साथ सम्मान से पेश आएँ।</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="cta">
+      <h2>Ready to Join the Community?</h2>
+      <p>
+        हमारे WhatsApp group को खोलें और जुड़ने से पहले group की
+        जानकारी तथा नियम देख लें।
+      </p>
+      <a class="btn btn-gold"
+         href="https://chat.whatsapp.com/HHqCR6aF00m1LpUnXnkh9f?s=cl%26p=a%26mlu=4%26ilr=4%26iam=2"
+         target="_blank" rel="noopener noreferrer">
+        🟢 Join WhatsApp Group Now ↗
+      </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <strong>RONAK E MITRA</strong>
+  <p>Your Digital Information & Resource Hub</p>
+
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+  </div>
+
+  <p>© <span id="year"></span> RONAK E MITRA. All rights reserved.</p>
+  <p>Independent informational website. Not an official government website.</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>

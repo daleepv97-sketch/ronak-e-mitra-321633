@@ -1,0 +1,377 @@
+```html
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | RONAK E MITRA</title>
+  <meta name="description" content="RONAK E MITRA के बारे में जानें। हमारा उद्देश्य सरकारी सेवाओं, डिजिटल टूल्स और उपयोगी ऑनलाइन जानकारी को आसान हिंदी में समझाना है।">
+  <meta name="robots" content="index, follow">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --green: #087443;
+      --dark: #064b2e;
+      --gold: #d6ad35;
+      --light: #f3fbf5;
+      --text: #26352c;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    header {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      border-bottom: 4px solid var(--gold);
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    nav {
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 2px 8px #00000010;
+    }
+
+    nav a {
+      color: var(--green);
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      margin: 4px 8px;
+    }
+
+    .container {
+      width: min(100% - 28px, 950px);
+      margin: 24px auto;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #087443, #15985a);
+      color: white;
+      padding: 32px 24px;
+      border-radius: 18px;
+      border-bottom: 5px solid var(--gold);
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--gold);
+      color: #17261c;
+      padding: 10px 17px;
+      margin-top: 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      background: white;
+      padding: 23px;
+      border-radius: 13px;
+      margin: 18px 0;
+      box-shadow: 0 3px 12px #00000009;
+    }
+
+    section h2 {
+      color: var(--dark);
+      font-size: 23px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      color: var(--dark);
+      margin: 12px 0 6px;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 9px 0;
+    }
+
+    ul {
+      padding-left: 24px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin-top: 15px;
+    }
+
+    .card {
+      background: white;
+      border: 1px solid #e0ebe2;
+      border-top: 4px solid var(--green);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a, section a {
+      color: var(--green);
+      font-weight: bold;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      background: #fff4d5;
+      border-left: 5px solid var(--gold);
+      border-radius: 8px;
+      padding: 16px;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 24px 15px;
+      margin-top: 30px;
+    }
+
+    footer a {
+      color: #ffdf76;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px 8px;
+    }
+
+    @media (max-width: 600px) {
+      header h1, .hero h2 {
+        font-size: 23px;
+      }
+
+      section {
+        padding: 17px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>RONAK E MITRA</h1>
+  <p>उपयोगी जानकारी, आसान हिंदी में</p>
+</header>
+
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="aadhaar.html">Aadhaar</a>
+  <a href="jan-aadhaar.html">Jan Aadhaar</a>
+  <a href="voter.html">Voter ID</a>
+  <a href="farmer.html">Farmer ID</a>
+  <a href="schemes.html">योजनाएँ</a>
+  <a href="tools.html">Online Tools</a>
+</nav>
+
+<main class="container">
+
+  <div class="hero">
+    <h2>हमारे बारे में — About Us</h2>
+    <p>
+      RONAK E MITRA का उद्देश्य उपयोगी डिजिटल जानकारी, ऑनलाइन सेवाओं
+      के मार्गदर्शन और सामान्य नागरिकों के काम आने वाले संसाधनों को
+      आसान भाषा में प्रस्तुत करना है।
+    </p>
+    <a class="btn" href="index.html">होम पेज पर जाएँ →</a>
+  </div>
+
+  <div class="notice">
+    <strong>स्पष्ट सूचना:</strong>
+    RONAK E MITRA एक स्वतंत्र निजी जानकारी वेबसाइट है।
+    यह राजस्थान सरकार, भारत सरकार, ई-मित्र या किसी सरकारी विभाग की
+    आधिकारिक वेबसाइट नहीं है।
+  </div>
+
+  <section>
+    <h2>1. RONAK E MITRA क्या है?</h2>
+    <p>
+      RONAK E MITRA एक सूचना-आधारित वेबसाइट है जहाँ उपयोगकर्ताओं को
+      विभिन्न ऑनलाइन सेवाओं, पहचान दस्तावेजों, किसान सेवाओं, सरकारी
+      योजनाओं और डिजिटल टूल्स के बारे में सामान्य जानकारी देने का प्रयास
+      किया जाता है।
+    </p>
+    <p>
+      हमारा लक्ष्य जटिल प्रक्रियाओं को सरल भाषा में समझाना और पाठकों को
+      संबंधित आधिकारिक वेबसाइटों तक पहुँचने में मदद करना है।
+      वेबसाइट पर दी गई जानकारी को पढ़कर उपयोगकर्ता अपनी जरूरत के अनुसार
+      आधिकारिक स्रोत से आगे की जानकारी प्राप्त कर सकते हैं।
+    </p>
+  </section>
+
+  <section>
+    <h2>2. हमारी वेबसाइट का उद्देश्य</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>📘 आसान जानकारी</h3>
+        <p>ऑनलाइन सेवाओं और प्रक्रियाओं को सरल हिंदी में समझाने का प्रयास।</p>
+      </div>
+
+      <div class="card">
+        <h3>🔗 उपयोगी लिंक</h3>
+        <p>जहाँ संभव हो, संबंधित सरकारी विभागों और उपयोगी वेबसाइटों के लिंक उपलब्ध कराना।</p>
+      </div>
+
+      <div class="card">
+        <h3>🧰 डिजिटल टूल्स</h3>
+        <p>दस्तावेज, फोटो, टेक्स्ट और अन्य रोजमर्रा के कामों के लिए उपयोगी टूल्स का परिचय।</p>
+      </div>
+
+      <div class="card">
+        <h3>🛡️ सुरक्षित उपयोग</h3>
+        <p>व्यक्तिगत जानकारी की सुरक्षा और नकली वेबसाइटों से बचने के बारे में जागरूकता बढ़ाना।</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>3. वेबसाइट पर कौन-सी जानकारी उपलब्ध है?</h2>
+
+    <h3>Aadhaar Card</h3>
+    <p>
+      आधार से संबंधित सामान्य जानकारी और आधिकारिक UIDAI सेवाओं तक पहुँचने के लिंक।
+    </p>
+    <a href="aadhaar.html">Aadhaar पेज देखें →</a>
+
+    <h3>Jan Aadhaar</h3>
+    <p>
+      राजस्थान जन आधार और संबंधित ऑनलाइन सेवाओं की सामान्य जानकारी।
+    </p>
+    <a href="jan-aadhaar.html">Jan Aadhaar पेज देखें →</a>
+
+    <h3>Voter ID</h3>
+    <p>
+      मतदाता पंजीकरण, मतदाता सूची और निर्वाचन संबंधी आधिकारिक सेवाओं के बारे में मार्गदर्शन।
+    </p>
+    <a href="voter.html">Voter ID पेज देखें →</a>
+
+    <h3>Farmer ID और किसान सेवाएँ</h3>
+    <p>
+      किसान पहचान, कृषि सेवाओं और संबंधित योजनाओं की सामान्य जानकारी।
+    </p>
+    <a href="farmer.html">Farmer पेज देखें →</a>
+
+    <h3>सरकारी योजनाएँ</h3>
+    <p>
+      केंद्र और राजस्थान सरकार की कुछ प्रमुख योजनाओं के बारे में जानकारी और आधिकारिक लिंक।
+    </p>
+    <a href="schemes.html">योजनाओं का पेज देखें →</a>
+
+    <h3>Online Tools</h3>
+    <p>
+      PDF, फोटो, टेक्स्ट और अन्य डिजिटल कामों के लिए उपयोगी बाहरी टूल्स के लिंक।
+    </p>
+    <a href="tools.html">Tools पेज देखें →</a>
+  </section>
+
+  <section>
+    <h2>4. क्या RONAK E MITRA सरकारी वेबसाइट है?</h2>
+    <p>
+      नहीं। RONAK E MITRA एक निजी और स्वतंत्र जानकारी वेबसाइट है।
+      इसका उद्देश्य सरकारी विभाग होने का दावा करना या किसी सरकारी विभाग
+      का प्रतिनिधित्व करना नहीं है।
+    </p>
+    <p>
+      वेबसाइट पर दिए गए सरकारी लिंक पाठकों को संबंधित आधिकारिक स्रोतों
+      तक पहुँचने में मदद करने के लिए हैं। किसी आवेदन की स्वीकृति, दस्तावेज
+      सत्यापन या सरकारी लाभ देने का निर्णय संबंधित विभाग ही करता है।
+    </p>
+  </section>
+
+  <section>
+    <h2>5. जानकारी की सटीकता और सीमाएँ</h2>
+    <p>
+      हम उपयोगी और समझने योग्य जानकारी प्रस्तुत करने का प्रयास करते हैं।
+      फिर भी सरकारी नियम, पात्रता, शुल्क, आवेदन की तारीखें और वेबसाइटों
+      की सुविधाएँ समय के साथ बदल सकती हैं।
+    </p>
+    <ul>
+      <li>किसी महत्वपूर्ण निर्णय से पहले आधिकारिक स्रोत से पुष्टि करें।</li>
+      <li>योजना का लाभ मिलने की गारंटी हमारी वेबसाइट नहीं देती।</li>
+      <li>बाहरी वेबसाइटों की सामग्री और गोपनीयता नीतियों पर हमारा नियंत्रण नहीं है।</li>
+      <li>आधिकारिक आवेदन और सत्यापन संबंधित विभाग के नियमों के अनुसार होते हैं।</li>
+    </ul>
+    <p>
+      अधिक जानकारी के लिए हमारा
+      <a href="disclaimer.html">Disclaimer</a> भी पढ़ें।
+    </p>
+  </section>
+
+  <section>
+    <h2>6. गोपनीयता और उपयोगकर्ता सुरक्षा</h2>
+    <p>
+      इंटरनेट पर किसी भी वेबसाइट का उपयोग करते समय अपनी निजी जानकारी की
+      सुरक्षा का ध्यान रखें। OTP, पासवर्ड, बैंक PIN और संवेदनशील दस्तावेज
+      अनजान व्यक्तियों या असत्यापित वेबसाइटों के साथ साझा न करें।
+    </p>
+    <p>
+      इस वेबसाइट की जानकारी और गोपनीयता संबंधी विवरण पढ़ने के लिए
+      <a href="privacy.html">Privacy Policy</a> देखें।
+    </p>
+  </section>
+
+  <section>
+    <h2>7. हमसे संपर्क करें</h2>
+    <p>
+      वेबसाइट की जानकारी, किसी लिंक या पेज से जुड़ी समस्या के बारे में
+      बताने के लिए हमारे Contact पेज पर जाएँ।
+    </p>
+    <a href="contact.html">Contact Us →</a>
+  </section>
+
+</main>
+
+<footer>
+  <p><strong>RONAK E MITRA</strong></p>
+  <p>उपयोगी जानकारी, आसान हिंदी में।</p>
+  <p>यह एक स्वतंत्र निजी वेबसाइट है, सरकारी वेबसाइट नहीं।</p>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="disclaimer.html">Disclaimer</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p>© <span id="year"></span> RONAK E MITRA</p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
+```

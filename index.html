@@ -1,0 +1,1024 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RONAK E MITRA | Digital Services & Government Information</title>
+  <meta name="description" content="RONAK E MITRA पर Aadhaar, Jan Aadhaar, Voter ID, Farmer ID, सरकारी योजनाओं, डिजिटल टूल्स और ऑनलाइन सेवाओं की उपयोगी जानकारी हिंदी में पाएँ।">
+  <meta name="keywords" content="Ronak E Mitra, Aadhaar information, Jan Aadhaar, Voter ID, Farmer ID, government schemes, digital tools, Rajasthan">
+  <meta name="theme-color" content="#075c3b">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="RONAK E MITRA - Digital Information Hub">
+  <meta property="og:description" content="ऑनलाइन सेवाओं, सरकारी योजनाओं और डिजिटल टूल्स की जानकारी एक जगह।">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --green: #075c3b;
+      --green-dark: #063d2a;
+      --green-light: #eaf7ef;
+      --gold: #f2b544;
+      --bg: #f6f9f6;
+      --white: #ffffff;
+      --text: #172b20;
+      --muted: #627268;
+      --border: #e1eae3;
+      --shadow: 0 8px 28px rgba(9, 63, 39, .08);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans Devanagari", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .notice {
+      background: #fff5d9;
+      color: #674a09;
+      padding: 8px 15px;
+      text-align: center;
+      font-size: 13px;
+      border-bottom: 1px solid #f0dfae;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 13px 5%;
+      background: rgba(255, 255, 255, .97);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 3px 15px #153d2910;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green);
+      font-size: 20px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .brand-logo {
+      width: 43px;
+      height: 43px;
+      border-radius: 13px;
+      object-fit: contain;
+      background: var(--green);
+      border: 2px solid var(--gold);
+    }
+
+    .brand-fallback {
+      width: 43px;
+      height: 43px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--gold);
+      background: var(--green-dark);
+      border: 2px solid var(--gold);
+      font-weight: 900;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: #33473a;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--green);
+    }
+
+    .nav .nav-join {
+      color: #fff;
+      background: var(--green);
+      padding: 9px 14px;
+      border-radius: 9px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 70px 20px 65px;
+      color: white;
+      text-align: center;
+      background:
+        radial-gradient(ellipse at 80% 0%, #20a56b55, transparent 40%),
+        linear-gradient(135deg, #063d2a, #08754a 58%, #06432e);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 320px;
+      border: 1px solid #ffffff15;
+      border-radius: 50%;
+      right: -120px;
+      bottom: -180px;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 13px;
+      border: 1px solid #f2b54477;
+      border-radius: 30px;
+      background: #f2b54415;
+      color: #ffe09a;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      margin-bottom: 19px;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 59px);
+      line-height: 1.17;
+      margin-bottom: 19px;
+    }
+
+    .hero h1 span {
+      color: #ffd778;
+    }
+
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 25px;
+      color: #e0f0e6;
+      font-size: 16px;
+    }
+
+    .hero-actions {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      padding: 12px 19px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 14px;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-gold {
+      color: #25331e;
+      background: linear-gradient(135deg, #ffe5a1, #f2b544);
+      box-shadow: 0 6px 18px #00000018;
+    }
+
+    .btn-white {
+      color: white;
+      border: 1px solid #ffffff80;
+      background: #ffffff10;
+    }
+
+    .hero-points {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      color: #e1f1e6;
+      font-size: 13px;
+    }
+
+    .hero-points span {
+      color: #ffdc81;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 48px 20px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 27px;
+    }
+
+    .section-heading small {
+      color: var(--green);
+      font-size: 12px;
+      letter-spacing: 2px;
+      font-weight: 900;
+    }
+
+    .section-heading h2 {
+      margin: 7px 0;
+      font-size: clamp(25px, 4vw, 36px);
+      line-height: 1.3;
+    }
+
+    .section-heading p {
+      max-width: 720px;
+      margin: auto;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .search-panel {
+      max-width: 800px;
+      margin: -27px auto 0;
+      position: relative;
+      z-index: 2;
+      padding: 18px;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .search-panel label {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 8px;
+      font-size: 14px;
+    }
+
+    .search-row {
+      display: flex;
+      gap: 9px;
+    }
+
+    .search-row input {
+      min-width: 0;
+      flex: 1;
+      padding: 12px 14px;
+      border: 1px solid #d4e0d7;
+      border-radius: 9px;
+      outline: none;
+      background: #fbfdfb;
+    }
+
+    .search-row input:focus {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px #08754a15;
+    }
+
+    .search-row button {
+      padding: 11px 19px;
+      border: 0;
+      border-radius: 9px;
+      background: var(--green);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    #searchMessage {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .service-card {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 23px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: white;
+      box-shadow: 0 4px 17px #153d2907;
+      transition: .22s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      border-color: #b4d6bd;
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      display: grid;
+      place-items: center;
+      width: 53px;
+      height: 53px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      background: var(--green-light);
+      border: 1px solid #d4ebda;
+      font-size: 27px;
+    }
+
+    .service-card h3 {
+      font-size: 19px;
+      line-height: 1.4;
+      margin-bottom: 8px;
+    }
+
+    .service-card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+      flex-grow: 1;
+    }
+
+    .card-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      color: var(--green);
+      font-weight: 900;
+      font-size: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #edf2ee;
+    }
+
+    .card-link:hover {
+      color: #a36c00;
+    }
+
+    .empty-state {
+      display: none;
+      text-align: center;
+      padding: 25px;
+      color: var(--muted);
+      background: white;
+      border: 1px dashed #cbd9ce;
+      border-radius: 13px;
+      margin-top: 18px;
+    }
+
+    .info-banner {
+      display: grid;
+      grid-template-columns: 1.3fr .7fr;
+      gap: 25px;
+      align-items: center;
+      padding: 30px;
+      border-radius: 19px;
+      border: 1px solid #b9dec6;
+      background: linear-gradient(135deg, #edf9f0, #ffffff);
+    }
+
+    .info-banner h2 {
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 1.3;
+      margin: 8px 0 12px;
+    }
+
+    .info-banner p {
+      color: var(--muted);
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    .info-emoji {
+      text-align: center;
+      font-size: 85px;
+    }
+
+    .mini-label {
+      display: inline-block;
+      color: var(--green);
+      font-weight: 900;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px;
+    }
+
+    .tip {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: white;
+    }
+
+    .tip span {
+      font-size: 27px;
+    }
+
+    .tip h3 {
+      margin: 8px 0;
+      font-size: 17px;
+    }
+
+    .tip p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .community-banner {
+      text-align: center;
+      padding: 38px 23px;
+      color: white;
+      border-radius: 20px;
+      background:
+        radial-gradient(ellipse at top right, #36b97944, transparent 55%),
+        linear-gradient(130deg, #063d2a, #08754a);
+    }
+
+    .community-banner h2 {
+      font-size: clamp(26px, 4vw, 37px);
+      margin: 8px 0;
+    }
+
+    .community-banner p {
+      max-width: 680px;
+      margin: 0 auto 20px;
+      color: #e1f0e6;
+      font-size: 14px;
+    }
+
+    .link-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .quick-link {
+      padding: 15px;
+      text-align: center;
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      color: var(--green);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .quick-link:hover {
+      background: var(--green-light);
+      border-color: #b8d9c2;
+    }
+
+    footer {
+      background: #061c12;
+      color: white;
+      padding: 35px 20px 20px;
+      border-top: 3px solid var(--gold);
+    }
+
+    .footer-inner {
+      max-width: 1100px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr;
+      gap: 30px;
+    }
+
+    footer h3 {
+      color: #ffd778;
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    footer p {
+      color: #c6d9cc;
+      font-size: 13px;
+      margin-bottom: 9px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-links a {
+      color: #d9e8de;
+      font-size: 13px;
+    }
+
+    .footer-links a:hover {
+      color: #ffd778;
+    }
+
+    .copyright {
+      max-width: 1100px;
+      margin: 25px auto 0;
+      padding-top: 15px;
+      border-top: 1px solid #ffffff20;
+      text-align: center;
+      color: #b8cbbf;
+      font-size: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .header {
+        justify-content: center;
+      }
+
+      .nav {
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .card-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .info-banner {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .info-emoji {
+        grid-row: 1;
+      }
+
+      .tips-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .link-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .notice {
+        font-size: 11px;
+      }
+
+      .header {
+        padding: 12px;
+        gap: 12px;
+      }
+
+      .brand {
+        font-size: 18px;
+      }
+
+      .nav {
+        gap: 10px 13px;
+      }
+
+      .nav a {
+        font-size: 12px;
+      }
+
+      .hero {
+        padding: 52px 17px 53px;
+      }
+
+      .hero p {
+        font-size: 14px;
+      }
+
+      .hero-points {
+        gap: 8px 14px;
+        font-size: 12px;
+      }
+
+      .container {
+        padding: 35px 15px;
+      }
+
+      .search-panel {
+        margin: -20px 15px 0;
+      }
+
+      .search-row {
+        flex-direction: column;
+      }
+
+      .search-row button {
+        width: 100%;
+      }
+
+      .card-grid,
+      .tips-grid,
+      .link-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        padding: 20px;
+      }
+
+      .info-banner {
+        padding: 23px 17px;
+      }
+
+      .info-emoji {
+        font-size: 62px;
+      }
+
+      .community-banner {
+        padding: 30px 17px;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="notice">
+    सूचना: RONAK E MITRA एक स्वतंत्र सूचना वेबसाइट है। यह कोई आधिकारिक सरकारी वेबसाइट नहीं है।
+  </div>
+
+  <header class="header">
+    <a class="brand" href="index.html" aria-label="RONAK E MITRA Home">
+      <img
+        class="brand-logo"
+        src="logo.png"
+        alt="RONAK E MITRA Logo"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='grid';"
+      >
+      <span class="brand-fallback" style="display:none">RE</span>
+      <span>RONAK E MITRA</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="#services">Services</a>
+      <a href="schemes.html">Schemes</a>
+      <a href="tools.html">Digital Tools</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-join" href="community.html">Community ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <span class="eyebrow">YOUR DIGITAL INFORMATION HUB</span>
+
+        <h1>
+          Digital जानकारी अब<br>
+          <span>एक ही जगह पर</span>
+        </h1>
+
+        <p>
+          Aadhaar, Jan Aadhaar, Voter ID, Farmer ID, सरकारी योजनाओं,
+          ऑनलाइन सेवाओं और उपयोगी डिजिटल टूल्स की जानकारी आसान हिंदी में पाएँ।
+          सही जानकारी पढ़ें और आधिकारिक वेबसाइट पर उसे सत्यापित करें।
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#services">Explore Services ↓</a>
+          <a class="btn btn-white" href="community.html">Join Our Community ↗</a>
+        </div>
+
+        <div class="hero-points">
+          <div><span>✓</span> आसान जानकारी</div>
+          <div><span>✓</span> Digital Resources</div>
+          <div><span>✓</span> Mobile Friendly</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-panel" aria-label="Website search">
+      <label for="serviceSearch">🔎 आपको किस जानकारी की जरूरत है?</label>
+      <form class="search-row" id="searchForm">
+        <input
+          id="serviceSearch"
+          type="search"
+          placeholder="जैसे Aadhaar, Voter ID, Farmer ID, Schemes..."
+          autocomplete="off"
+          aria-label="Search website services"
+        >
+        <button type="submit">Search</button>
+      </form>
+      <p id="searchMessage" aria-live="polite">
+        किसी सेवा का नाम लिखकर Search दबाएँ या नीचे दी गई सेवाएँ देखें।
+      </p>
+    </section>
+
+    <section class="container" id="services">
+      <div class="section-heading">
+        <small>OUR INFORMATION PAGES</small>
+        <h2>लोकप्रिय सेवाएँ और जानकारी</h2>
+        <p>
+          अपनी जरूरत के अनुसार कोई कार्ड चुनें। हर पेज पर संबंधित विषय की
+          जानकारी और आगे की उपयोगी दिशा-निर्देश दिए जा सकते हैं।
+        </p>
+      </div>
+
+      <div class="card-grid" id="serviceGrid">
+
+        <article class="service-card" data-search="aadhaar आधार uidai download update correction status">
+          <div class="service-icon">🪪</div>
+          <h3>Aadhaar Card जानकारी</h3>
+          <p>Aadhaar डाउनलोड, अपडेट, स्टेटस और आधिकारिक सेवाओं तक पहुँचने के बारे में जानकारी पाएँ।</p>
+          <a class="card-link" href="aadhaar.html">Aadhaar Guide पढ़ें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="jan aadhaar जन आधार rajasthan family id update status">
+          <div class="service-icon">👨‍👩‍👧‍👦</div>
+          <h3>Jan Aadhaar</h3>
+          <p>Jan Aadhaar से जुड़ी सामान्य जानकारी, परिवार विवरण और संबंधित ऑनलाइन सेवाओं के बारे में जानें।</p>
+          <a class="card-link" href="jan-aadhaar.html">Jan Aadhaar Guide <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="voter id epic voter card मतदाता चुनाव registration correction">
+          <div class="service-icon">🗳️</div>
+          <h3>Voter ID Card</h3>
+          <p>मतदाता पहचान पत्र, आवेदन, सुधार और वोटर सेवाओं की आधिकारिक जानकारी देखें।</p>
+          <a class="card-link" href="voter.html">Voter ID Guide <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="farmer id kisan किसान खेती agriculture rajasthan">
+          <div class="service-icon">🌾</div>
+          <h3>Farmer ID & किसान जानकारी</h3>
+          <p>Farmer ID, कृषि सेवाओं और किसान से जुड़ी योजनाओं की जानकारी और उपयोगी लिंक देखें।</p>
+          <a class="card-link" href="farmer.html">Farmer Guide पढ़ें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="government schemes सरकारी योजना scholarship pension subsidy yojana">
+          <div class="service-icon">🏛️</div>
+          <h3>सरकारी योजनाएँ</h3>
+          <p>विभिन्न योजनाओं, पात्रता, जरूरी दस्तावेजों और आधिकारिक जानकारी तक पहुँचने का तरीका जानें।</p>
+          <a class="card-link" href="schemes.html">योजनाएँ देखें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="digital tools pdf photo resize compress image converter online">
+          <div class="service-icon">🧰</div>
+          <h3>Digital Tools</h3>
+          <p>PDF, फोटो, ऑनलाइन काम और दूसरे डिजिटल कार्यों के लिए उपयोगी टूल्स खोजें।</p>
+          <a class="card-link" href="tools.html">Tools Explore करें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="community whatsapp group community resources">
+          <div class="service-icon">💬</div>
+          <h3>Community Hub</h3>
+          <p>WhatsApp group और पढ़ाई, डिजिटल टूल्स, करियर व ऑनलाइन सुरक्षा के उपयोगी संसाधन देखें।</p>
+          <a class="card-link" href="community.html">Community खोलें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="about us about ronak e mitra website जानकारी परिचय">
+          <div class="service-icon">ℹ️</div>
+          <h3>हमारे बारे में</h3>
+          <p>RONAK E MITRA वेबसाइट का उद्देश्य और यहाँ उपलब्ध जानकारी के बारे में जानें।</p>
+          <a class="card-link" href="about.html">About Us पढ़ें <span>→</span></a>
+        </article>
+
+        <article class="service-card" data-search="contact help email feedback संपर्क">
+          <div class="service-icon">✉️</div>
+          <h3>Contact & Feedback</h3>
+          <p>वेबसाइट से संबंधित प्रश्न, सुझाव या सुधार के लिए संपर्क पेज पर जाएँ।</p>
+          <a class="card-link" href="contact.html">Contact करें <span>→</span></a>
+        </article>
+
+      </div>
+
+      <div class="empty-state" id="emptyState">
+        इस नाम से कोई कार्ड नहीं मिला। कोई दूसरा शब्द लिखकर देखें।
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="info-banner">
+        <div>
+          <span class="mini-label">USEFUL INFORMATION</span>
+          <h2>ऑनलाइन सेवाओं को समझें, सही जानकारी के साथ आगे बढ़ें</h2>
+          <p>
+            किसी सेवा के लिए आवेदन करने से पहले पात्रता, आवश्यक दस्तावेज,
+            शुल्क और प्रक्रिया को संबंधित आधिकारिक पोर्टल पर जाँचें।
+            यहाँ दी गई जानकारी को अंतिम सरकारी निर्णय न मानें।
+          </p>
+          <a class="btn btn-gold" href="schemes.html">Explore Information →</a>
+        </div>
+        <div class="info-emoji" aria-hidden="true">📚</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-heading">
+        <small>SMART DIGITAL HABITS</small>
+        <h2>ऑनलाइन काम करते समय इन बातों का ध्यान रखें</h2>
+        <p>आपकी सुरक्षा और सही जानकारी सबसे जरूरी है।</p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip">
+          <span>🔐</span>
+          <h3>OTP सुरक्षित रखें</h3>
+          <p>अपना OTP, पासवर्ड या बैंक की गोपनीय जानकारी किसी अनजान व्यक्ति के साथ साझा न करें।</p>
+        </article>
+
+        <article class="tip">
+          <span>🏛️</span>
+          <h3>Official Website जाँचें</h3>
+          <p>आवेदन, शुल्क, पात्रता और अंतिम नियम संबंधित सरकारी वेबसाइट से सत्यापित करें।</p>
+        </article>
+
+        <article class="tip">
+          <span>📄</span>
+          <h3>दस्तावेज सुरक्षित रखें</h3>
+          <p>निजी दस्तावेज अनजान वेबसाइटों पर अपलोड करने से बचें और उनकी privacy policy जाँचें।</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="community-banner">
+        <span class="eyebrow">CONNECT & LEARN</span>
+        <h2>हमारे Community Hub पर जाएँ</h2>
+        <p>
+          Digital tools, learning resources, career information और online safety
+          से जुड़े उपयोगी लिंक एक जगह देखें। WhatsApp group में जुड़ने से पहले
+          उसके नियम और जानकारी पढ़ लें।
+        </p>
+        <a class="btn btn-gold" href="community.html">Explore Community →</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-heading">
+        <small>QUICK LINKS</small>
+        <h2>जरूरी पेज</h2>
+        <p>वेबसाइट और इसकी नीतियों से जुड़ी जानकारी।</p>
+      </div>
+
+      <div class="link-grid">
+        <a class="quick-link" href="about.html">ℹ️ About Us</a>
+        <a class="quick-link" href="contact.html">✉️ Contact Us</a>
+        <a class="quick-link" href="privacy.html">🔒 Privacy Policy</a>
+        <a class="quick-link" href="disclaimer.html">📌 Disclaimer</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>RONAK E MITRA</h3>
+        <p>
+          ऑनलाइन सेवाओं, सरकारी योजनाओं और डिजिटल संसाधनों के बारे में
+          आसान भाषा में जानकारी देने वाला स्वतंत्र सूचना प्लेटफॉर्म।
+        </p>
+        <p><strong>महत्वपूर्ण:</strong> हम सरकारी विभाग नहीं हैं और सरकारी आवेदन स्वीकृत या जारी नहीं करते।</p>
+      </div>
+
+      <div>
+        <h3>Useful Pages</h3>
+        <div class="footer-links">
+          <a href="aadhaar.html">Aadhaar Information</a>
+          <a href="jan-aadhaar.html">Jan Aadhaar</a>
+          <a href="voter.html">Voter ID</a>
+          <a href="farmer.html">Farmer ID</a>
+          <a href="schemes.html">Government Schemes</a>
+          <a href="tools.html">Digital Tools</a>
+          <a href="community.html">Community Hub</a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Website Information</h3>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <p style="margin-top:12px">सरकारी सेवाओं के लिए संबंधित आधिकारिक पोर्टल ही इस्तेमाल करें।</p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © <span id="year"></span> RONAK E MITRA. All rights reserved.
+      <br>
+      Independent informational website. Not an official government website.
+    </div>
+  </footer>
+
+  <script>
+    // Automatically update copyright year.
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // Homepage service-card search.
+    const searchForm = document.getElementById("searchForm");
+    const searchInput = document.getElementById("serviceSearch");
+    const searchMessage = document.getElementById("searchMessage");
+    const serviceCards = Array.from(
+      document.querySelectorAll("#serviceGrid .service-card")
+    );
+    const emptyState = document.getElementById("emptyState");
+
+    function searchServices() {
+      const query = searchInput.value.trim().toLocaleLowerCase("hi");
+      let visibleCount = 0;
+
+      serviceCards.forEach(function(card) {
+        const searchableText = (
+          card.innerText + " " + (card.dataset.search || "")
+        ).toLocaleLowerCase("hi");
+
+        const matches = !query || searchableText.includes(query);
+
+        card.style.display = matches ? "flex" : "none";
+
+        if (matches) {
+          visibleCount++;
+        }
+      });
+
+      emptyState.style.display = visibleCount === 0 ? "block" : "none";
+
+      if (!query) {
+        searchMessage.textContent =
+          "किसी सेवा का नाम लिखकर Search दबाएँ या नीचे दी गई सेवाएँ देखें।";
+      } else {
+        searchMessage.textContent =
+          visibleCount + " संबंधित कार्ड मिले।";
+      }
+    }
+
+    searchForm.addEventListener("submit", function(event) {
+      event.preventDefault();
+      searchServices();
+
+      document.getElementById("services").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+
+    searchInput.addEventListener("input", searchServices);
+  </script>
+
+</body>
+</html>
