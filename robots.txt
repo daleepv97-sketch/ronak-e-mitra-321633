@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://magnificent-palmier-4dfcdc.netlify.app/sitemap.xml
+ कोड कॉपी करें
